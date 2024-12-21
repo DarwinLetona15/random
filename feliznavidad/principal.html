@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Feliz Navidad 2024</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+    <!-- Árbol -->
+    <polygon class="tree" points="100,10 30,90 70,90 10,150 50,150 0,210 200,210 150,150 190,150 130,90 170,90"/>
+
+    <!-- Estrella superior -->
+    <polygon class="treeStar" points="100,5 105,15 115,15 107,22 110,32 100,27 90,32 93,22 85,15 95,15"/>
+
+    <!-- Luces -->
+    <circle class="treeLight" cx="50" cy="140" r="3"/>
+    <circle class="treeLight" cx="90" cy="100" r="3"/>
+    <circle class="treeLight" cx="120" cy="120" r="3"/>
+    <circle class="treeLight" cx="160" cy="170" r="3"/>
+    <circle class="treeLight" cx="70" cy="180" r="3"/>
+
+    <defs>
+    <linearGradient id="treeGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#39c42c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0cd13da9;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="starGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffdf00;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c89568;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  </svg>
+
+  <div id="music-container"></div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
